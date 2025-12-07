@@ -1,6 +1,6 @@
 ## Why only the minimum widgets rebuild
 
-I use Provider’s selection APIs (`Selector` and `context.select`) to ensure widgets only rebuild when the specific data they depend on changes.
+I use Provider’s selection APIs (`Selector`) to ensure widgets only rebuild when the specific data they depend on changes.
 
 - **[Completed count selection]** [lib/views/todo_view.dart](cci:7://file:///Users/pius/Documents/bmoni_test_2/test_2/lib/views/todo_view.dart:0:0-0:0):
   - `Selector<AppStateViewModel, int>(selector: (context, vm) => vm.completedTodosCount, ...)`
